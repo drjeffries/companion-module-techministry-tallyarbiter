@@ -10,6 +10,13 @@ To learn more about the Tally Arbiter project, visit the main repository at <htt
 - The software can be downloaded from <http://www.github.com/josephdadams/tallyarbiter>.
 - Configure the instance with the IP address of the remote machine.
 - The module makes HTTP requests over port 4455 by default.
+- **Tally Arbiter 3.3 and later require a login.** Create a dedicated Tally Arbiter user with the
+  "producer" role for this connection (Settings → Users in the Tally Arbiter web UI) rather than
+  reusing an "admin" account — this module stores the password in Companion's configuration, so a
+  producer-only account limits what could be done with it if that configuration were ever exposed.
+  Make sure the account's password has already been changed from the default, then enter that
+  username/password in the module configuration. Leave both fields blank when connecting to a
+  Tally Arbiter server older than 3.3.
 
 ### To use the module
 
