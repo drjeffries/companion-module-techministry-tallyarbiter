@@ -43,6 +43,7 @@ Add an action to a button and choose the action you wish to use.
 - A tally source is online/offline
 - The selected device is in preview or program
 - The selected Device is in the selected Bus
+- The selected Bus has an active device
 - A Listener Client has disconnected
 - A TSL Client has disconnected
 - A Cloud Destination has disconnected
@@ -52,3 +53,7 @@ Add an action to a button and choose the action you wish to use.
 - Feedback for each Device with Preview and Program status
 - Flash a Device
 - Flash a Listener Client
+- Reassign a Listener Client
+- Status of each Source
+- Status of each Bus, showing which device(s) are currently active on it
+- Status of each Listener Client, TSL Client, and Cloud Destination

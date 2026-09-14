@@ -172,7 +172,7 @@ module.exports = {
 					if (self.listener_clients[i].inactive === false) {
 						let listenerClientObj = {}
 						listenerClientObj.id = self.listener_clients[i].id
-						listenerClientObj.label = `${self.GetDeviceByDeviceId(self.listener_clients[i].deviceId).name} - ${self.listener_clients[i].ipAddress} (${self.listener_clients[i].listenerType})`
+						listenerClientObj.label = self.GetListenerClientLabel(self.listener_clients[i])
 						self.listener_clients_array.push(listenerClientObj)
 					}
 				}
